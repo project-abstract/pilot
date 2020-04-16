@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://shopping_cart.glb" type="PackedScene" id=1]
+
+[sub_resource type="CapsuleShape" id=1]
+
+[node name="cart" type="KinematicBody"]
+
+[node name="shopping_cart" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.83566, 1.60901, -4.16551 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1.93543, 0, 0, 0, 1.9365, 0, 0, 0, 2.75335, 5.01232, 1.58714, -4.54776 )
+shape = SubResource( 1 )
