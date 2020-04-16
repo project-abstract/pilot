@@ -5,10 +5,11 @@
 [sub_resource type="CapsuleShape" id=1]
 
 [node name="cart" type="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.33847 )
 
 [node name="shopping_cart" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.83566, 1.60901, -4.16551 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.77335, 1.559, -5.29198 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1.93543, 0, 0, 0, 1.9365, 0, 0, 0, 2.75335, 5.01232, 1.58714, -4.54776 )
+transform = Transform( 1.71771, 0, 0, 0, 1.66336, 0, 0, 0, 2.34125, 3.9019, 1.24957, -5.18132 )
 shape = SubResource( 1 )
