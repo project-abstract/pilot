@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://shopping_cart.glb" type="PackedScene" id=1]
+[ext_resource path="res://cart.gd" type="Script" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 1.40345, 1.61766 )
+
+[node name="Cart" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.16733, 0, 0 )
+
+[node name="shopping_cart" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.22436, 1.77216, 0 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="shopping_cart"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00759047, -0.288123, 0 )
+shape = SubResource( 1 )

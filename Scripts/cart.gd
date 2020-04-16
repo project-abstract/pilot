@@ -1,17 +1,18 @@
 extends KinematicBody
 
 var direction = Vector3()
+export var velocity : int = 10000
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	direction = Vector3(0,0,0)
 	if Input.is_key_pressed(KEY_UP):
-		direction.z -= 10
+		direction.z -= velocity
 	if Input.is_key_pressed(KEY_DOWN):
-		direction.z += 10
+		direction.z += velocity
 	if Input.is_key_pressed(KEY_LEFT):
-		direction.x -= 10
+		direction.x -= velocity
 	if Input.is_key_pressed(KEY_RIGHT):
-		direction.x += 10
+		direction.x += velocity
 	direction = direction.normalized()
 	move_and_collide(direction)
-	#move_and_slide(direction, Vector3(0,1,0))
+	#move_and_slide(direction, Vector3.UP)

@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/simple_character_idle.glb-a350a8a7c9da61827ac0dd80dd856b90.scn"
+path="res://.import/simple_character_idle.glb-e8e4cb24adb68768f27d42e738087931.scn"
 
 [deps]
 
-source_file="res://simple_character_idle.glb"
-dest_files=[ "res://.import/simple_character_idle.glb-a350a8a7c9da61827ac0dd80dd856b90.scn" ]
+source_file="res://Models/simple_character_idle.glb"
+dest_files=[ "res://.import/simple_character_idle.glb-e8e4cb24adb68768f27d42e738087931.scn" ]
 
 [params]
 
