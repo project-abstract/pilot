@@ -1,13 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://floor.tscn" type="PackedScene" id=1]
-[ext_resource path="res://cart.tscn" type="PackedScene" id=2]
-[ext_resource path="res://wall.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scripts/cart.gd" type="Script" id=4]
-[ext_resource path="res://simple_character_idle.glb" type="PackedScene" id=5]
-[ext_resource path="res://scripts/test.gd" type="Script" id=6]
-
-
+[ext_resource path="res://Models/floor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Items/cart.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Models/Wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/cart.gd" type="Script" id=4]
+[ext_resource path="res://Items/simple_character_idle.glb" type="PackedScene" id=5]
+[ext_resource path="res://Scripts/test.gd" type="Script" id=6]
 
 [node name="test" type="Spatial"]
 script = ExtResource( 6 )
@@ -27,7 +25,7 @@ transform = Transform( -1.62921e-07, 0, 1, 0, 0.3, 0, -1, 0, -1.62921e-07, -100.
 transform = Transform( -1.62921e-07, 0, 1, 0, 0.3, 0, -1, 0, -1.62921e-07, 99.5096, -2.279, -0.18071 )
 
 [node name="cart" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60653, 5.33847 )
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 1.60653, 5.33847 )
 script = ExtResource( 4 )
 
 [node name="ClippedCamera" type="ClippedCamera" parent="cart"]
@@ -35,4 +33,4 @@ transform = Transform( 1, 0, 0, 0, 0.998968, 0.0454153, 0, -0.0454153, 0.998968,
 far = 230.0
 
 [node name="simple_character_idle" parent="." instance=ExtResource( 5 )]
-transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 1.31129, 3.34747, -40.0005 )
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 1.31129, 3.34747, -40.0005 )
