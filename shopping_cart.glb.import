@@ -11,7 +11,7 @@ dest_files=[ "res://.import/shopping_cart.glb-4097b73b06c0e0837dbca845bd4773f7.s
 
 [params]
 
-nodes/root_type="KinematicBody"
+nodes/root_type="Spatial"
 nodes/root_name="Scene Root"
 nodes/root_scale=1.0
 nodes/custom_script=""
