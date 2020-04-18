@@ -1,9 +1,9 @@
 extends KinematicBody
 
 var direction = Vector3()
-var speed = 200
-var velocity = Vector3()
-var angle = 0
+export var speed = 200
+export var velocity = Vector3()
+export var angle = 0
 
 func _physics_process(delta):
 	direction = Vector3(0,0,0)
@@ -37,3 +37,6 @@ func _physics_process(delta):
 		print('Angle: cos sin',cos(deg2rad(angle)),'+',sin(deg2rad(angle)))
 		print('Velocity:', velocity.x,'+' ,velocity.z)
 		#velocity.y = 20
+	if Input.is_key_pressed(KEY_ESCAPE):
+		get_tree().reload_current_scene()
+		
