@@ -1,9 +1,9 @@
 extends KinematicBody
 
 var direction = Vector3()
-var speed = 200
+export var speed = 200
 var velocity = Vector3()
-var angle = 0
+export var angle = 0
 
 func _physics_process(delta):
 	direction = Vector3(0,0,0)
