@@ -31,9 +31,3 @@ func _physics_process(delta):
 		angle = 350
 	if angle == 360:
 		angle = 0
-	
-	if Input.is_key_pressed(KEY_SPACE):
-		print('Angle:rad deg',deg2rad(angle),'+' ,angle)
-		print('Angle: cos sin',cos(deg2rad(angle)),'+',sin(deg2rad(angle)))
-		print('Velocity:', velocity.x,'+' ,velocity.z)
-		#velocity.y = 20

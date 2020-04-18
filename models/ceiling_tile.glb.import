@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/ceiling_tile.glb-79345f4a3c52f4a6f24b97adf5b632f8.scn"
+path="res://.import/ceiling_tile.glb-50b8dde2e0fd6fe6d4bad8db02e1f78f.scn"
 
 [deps]
 
-source_file="res://models/ceiling_tile.glb"
-dest_files=[ "res://.import/ceiling_tile.glb-79345f4a3c52f4a6f24b97adf5b632f8.scn" ]
+source_file="res://Models/ceiling_tile.glb"
+dest_files=[ "res://.import/ceiling_tile.glb-50b8dde2e0fd6fe6d4bad8db02e1f78f.scn" ]
 
 [params]
 

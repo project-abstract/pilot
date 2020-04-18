@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/marble.glb-66872fddb8a20ed219c535a8491e4b60.scn"
+path="res://.import/marble.glb-6f88e0bafb8c8a55cf650226a3a998ad.scn"
 
 [deps]
 
-source_file="res://models/marble.glb"
-dest_files=[ "res://.import/marble.glb-66872fddb8a20ed219c535a8491e4b60.scn" ]
+source_file="res://Models/marble.glb"
+dest_files=[ "res://.import/marble.glb-6f88e0bafb8c8a55cf650226a3a998ad.scn" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/shopping_cart_tex.glb-6ec3c26c5e4c1646e832155310945b35.scn"
+path="res://.import/shopping_cart_tex.glb-b75006de1fd436fb5c8f4c7916f02275.scn"
 
 [deps]
 
-source_file="res://models/shopping_cart_tex.glb"
-dest_files=[ "res://.import/shopping_cart_tex.glb-6ec3c26c5e4c1646e832155310945b35.scn" ]
+source_file="res://Models/shopping_cart_tex.glb"
+dest_files=[ "res://.import/shopping_cart_tex.glb-b75006de1fd436fb5c8f4c7916f02275.scn" ]
 
 [params]
 
