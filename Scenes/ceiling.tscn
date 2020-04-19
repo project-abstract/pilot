@@ -2,7 +2,6 @@
 
 [ext_resource path="res://Gridmaps/tile.meshlib" type="MeshLibrary" id=1]
 
-
 [node name="ceiling" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.3793, 0 )
 
