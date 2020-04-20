@@ -23,14 +23,13 @@ func _physics_process(deltal):
 		#direction.x += 10
 		angle -= 10
 		rotate_y(deg2rad(-10))
-	if Input.is_key_pressed(KEY_SPACE):
-		if velocity.y == 0:
-			velocity.y = 150*delta
-	
-#	if velocity.y > 0:
-#		gravity = -15
-#	else:
-#		gravity = -45
+#	if Input.is_key_pressed(KEY_SPACE):
+#		if velocity.y == 0:
+#			velocity.y = 150*delta
+	if velocity.y > 0:
+		gravity = -15
+	else:
+		gravity = -45
 	direction = direction.normalized()
 	direction = direction * speed * delta
 	velocity.x = direction.x
@@ -42,4 +41,10 @@ func _physics_process(deltal):
 		angle = 350
 	if angle == 360:
 		angle = 0
+	
+#	var collisionCount = self.get_slide_count()
+#	if collisionCount > 0:
+#		var collision = self.get_slide_collision(0)
+#		if collision.collider is RigidBody:
+#			collision.collider.apply_impulse(collision.position, -collision.normal)
 

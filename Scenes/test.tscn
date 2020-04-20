@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Scenes/floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/shopping_cart_tex.gd" type="Script" id=2]
@@ -12,6 +12,13 @@
 [ext_resource path="res://Scenes/shelves.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Items/toiletpaper.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scripts/counter.gd" type="Script" id=12]
+[ext_resource path="res://Scripts/toiletpaper.gd" type="Script" id=13]
+[ext_resource path="res://Images/button_up_unpressed.png" type="Texture" id=14]
+[ext_resource path="res://Images/button_up_pressed.png" type="Texture" id=15]
+[ext_resource path="res://Scripts/ForwardButton.gd" type="Script" id=16]
+[ext_resource path="res://Scripts/ReverseButton.gd" type="Script" id=17]
+[ext_resource path="res://Scripts/RotateLButton.gd" type="Script" id=18]
+[ext_resource path="res://Scripts/RotateRButton.gd" type="Script" id=19]
 
 [sub_resource type="Environment" id=1]
 ambient_light_color = Color( 1, 1, 1, 1 )
@@ -41,10 +48,10 @@ transform = Transform( -1.62921e-07, 0, 1, 0, 0.5, 0, -1, 0, -1.62921e-07, -100.
 transform = Transform( -1.62921e-07, 0, 1, 0, 0.5, 0, -1, 0, -1.62921e-07, 99.5096, -2.279, -0.18071 )
 
 [node name="shopping_cart_tex" parent="." instance=ExtResource( 4 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 82.0112, 10.1071, 71.5157 )
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 82.0112, 5.95506, 71.5157 )
 script = ExtResource( 2 )
 
-[node name="ClippedCamera" type="ClippedCamera" parent="shopping_cart_tex"]
+[node name="Camera" type="Camera" parent="shopping_cart_tex"]
 transform = Transform( 0.5, 0, 0, 0, 0.499484, 0.0227077, 0, -0.0227077, 0.499484, 0.10276, 3.35244, 5.54176 )
 far = 300.0
 
@@ -58,7 +65,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.36411, 0 )
 environment = SubResource( 1 )
 
 [node name="virus" parent="." instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.84564, 4.19698, 12.2467 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.6581, 6.74679, 2.66648 )
+contacts_reported = 1
+contact_monitor = true
+can_sleep = false
 script = ExtResource( 5 )
 
 [node name="shelves" parent="." instance=ExtResource( 10 )]
@@ -80,7 +90,7 @@ transform = Transform( 0.25, 0, -1.42109e-14, 0, 1, 0, 3.55271e-15, 0, 1, 58.515
 transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -20.1519, -0.737642, 23.7999 )
 
 [node name="shelves3" parent="shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 18.1491, 0, 26.6844 )
+transform = Transform( -1.30337e-07, 0, -1, 0, 1, 0, 0.8, 0, -1.62921e-07, 18.1491, 0, 30.9788 )
 
 [node name="shelves4" parent="shelves" instance=ExtResource( 10 )]
 transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 34.2009, 0, 26.6844 )
@@ -116,7 +126,11 @@ transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -19.522
 transform = Transform( -1.22191e-07, 0, -1, 0, 1, 0, 0.75, 0, -1.62921e-07, 0.328884, 0, 16.1427 )
 
 [node name="toiletpaper" parent="." instance=ExtResource( 11 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 89.071, 6.1754, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.0882, 6.1754, 86.9177 )
+contacts_reported = 2
+contact_monitor = true
+can_sleep = false
+script = ExtResource( 13 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 320.0
@@ -130,4 +144,59 @@ script = ExtResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="tree_entered" from="floor" to="shopping_cart_tex" method="_on_floor_tree_entered"]
+
+[node name="ForwardButton" type="TextureButton" parent="."]
+margin_left = 819.0
+margin_top = 274.0
+margin_right = 1075.0
+margin_bottom = 530.0
+rect_scale = Vector2( 0.351678, 0.327785 )
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
+script = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReverseButton" type="TextureButton" parent="."]
+margin_left = 911.142
+margin_top = 510.769
+margin_right = 1167.14
+margin_bottom = 766.769
+rect_rotation = 180.0
+rect_scale = Vector2( 0.351678, 0.327785 )
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
+script = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RotateLButton" type="TextureButton" parent="."]
+margin_left = 740.0
+margin_top = 444.828
+margin_right = 996.0
+margin_bottom = 700.828
+rect_rotation = -90.0
+rect_scale = Vector2( 0.351678, 0.327785 )
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RotateRButton" type="TextureButton" parent="."]
+margin_left = 987.266
+margin_top = 351.52
+margin_right = 1243.27
+margin_bottom = 607.52
+rect_rotation = 90.0
+rect_scale = Vector2( 0.351678, 0.327785 )
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
+script = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="body_entered" from="toiletpaper" to="toiletpaper" method="_on_toiletpaper_body_entered"]

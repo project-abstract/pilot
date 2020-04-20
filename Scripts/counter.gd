@@ -13,7 +13,8 @@ func _process(delta):
 	self.text = changeIntoProper(time)
 	
 	if (totalTime-time <=0):
-		get_tree().change_scene("res://Main/menu.tscn")
+		pass
+		#get_tree().change_scene("res://Main/menu.tscn")
 		
 func changeIntoProper(time):
 	return String((totalTime - time)/1000)
