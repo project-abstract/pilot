@@ -1,7 +1,5 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://scripts/title.gd" type="Script" id=1]
-[ext_resource path="res://scripts/footnote.gd" type="Script" id=2]
 [ext_resource path="res://scripts/to_game.gd" type="Script" id=3]
 
 [node name="MainMenu" type="Control"]
@@ -13,14 +11,12 @@ __meta__ = {
 }
 
 [node name="play_game" type="Button" parent="."]
-anchor_left = 0.303
-anchor_top = 0.353
-anchor_right = 0.303
-anchor_bottom = 0.353
-margin_left = 39.728
-margin_top = -11.8
-margin_right = 366.728
-margin_bottom = 122.2
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -170.181
+margin_top = 397.503
+margin_right = 156.819
+margin_bottom = 526.503
 text = "Play Game"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -33,20 +29,18 @@ margin_right = 370.0
 margin_bottom = 89.0
 rect_scale = Vector2( 5.12, 5.84 )
 text = "Project COV3D"
-script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="footnote" type="Label" parent="."]
-margin_left = 350.0
-margin_top = 375.0
-margin_right = 507.0
-margin_bottom = 389.0
+anchor_right = 0.219832
+anchor_bottom = 0.0342222
+margin_right = -124.385
+margin_bottom = -10.64
 rect_scale = Vector2( 1.79226, 1.76 )
 text = "(c) 2020 Project Abstract"
-script = ExtResource( 2 )
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": true
 }
 [connection signal="pressed" from="play_game" to="." method="_on_play_game_pressed"]
