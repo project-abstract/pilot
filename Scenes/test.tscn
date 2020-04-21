@@ -49,59 +49,59 @@ transform = Transform( 2.33283, 0, 0, 0, 1, 0, 0, 0, 2.1556, 0, 50.6731, 0 )
 [node name="light" parent="floor/ceiling" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.36411, 0 )
 
+[node name="shelves2" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, -49.421, -0.686876, 96.389 )
+
+[node name="shelves16" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( -8.14602e-08, 0, 2, 0, 3, 0, -0.5, 0, -3.25841e-07, -24.4123, 1.52605, -60.946 )
+
+[node name="shelves12" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( -3.25841e-07, 0, 2, 0, 3, 0, -2, 0, -3.25841e-07, 3.60661, 1.52605, -21.3638 )
+
+[node name="shelves9" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( -3.25841e-07, 0, 2, 0, 3, 0, -2, 0, -3.25841e-07, -1.492, 1.52605, 58.5819 )
+
+[node name="shelves17" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 1, -1.77636e-14, -5.68434e-13, 0, 2.99809, -0.0713688, 9.9476e-14, 0.107053, 1.99873, -38.954, 1.52605, -74.9198 )
+
+[node name="shelves3" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 1.6, 0, -9.9476e-13, 0, 3, 0, 1.19371e-12, 0, 2, -35.0632, 1.52605, 19.787 )
+
+[node name="shelves10" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, 57.4138, 1.52605, 60.6244 )
+
+[node name="shelves11" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, 36.2932, 1.52605, 19.4764 )
+
+[node name="shelves4" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, -43.652, 1.52605, -12.3166 )
+
+[node name="shelves5" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, -59.9592, 1.52605, -51.5326 )
+
+[node name="shelves6" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, 70.3269, 1.52605, -50.1849 )
+
+[node name="shelves13" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, 18.6787, 1.3625, -83.4207 )
+
+[node name="shelves14" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, 54.3582, 1.52605, -98.274 )
+
+[node name="shelves15" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, -58.6568, 1.52605, -98.274 )
+
+[node name="shelves7" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, 62.7776, 1.52605, -13.0766 )
+
+[node name="shelves8" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 2, 0, -9.9476e-13, 0, 3, 0, 9.9476e-13, 0, 2, 58.6714, 1.52605, 95.1292 )
+
+[node name="shelves18" parent="floor" instance=ExtResource( 10 )]
+transform = Transform( 1.5, 0, -9.9476e-13, 0, 3, 0, 1.25056e-12, 0, 2, -64.7354, 1.52605, 55.4274 )
+
 [node name="shelves" parent="floor" instance=ExtResource( 10 )]
 transform = Transform( -3.25841e-07, 0, 2, 0, 3, 0, -2, 0, -3.25841e-07, -97.0208, 1.52605, 56.0852 )
-
-[node name="shelves17" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -8.14603e-08, -0.0535266, -0.999363, 0, 0.999363, -0.0237896, 0.5, -8.72059e-09, -1.62817e-07, 64.3447, 0, 28.3327 )
-
-[node name="shelves9" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -1.24835, 0, 47.7644 )
-
-[node name="shelves12" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( 1, 0, -7.10543e-14, 0, 1, 0, 7.10543e-14, 0, 1, 38.7245, 0, 47.7643 )
-
-[node name="shelves16" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( 0.25, 0, -1.42109e-14, 0, 1, 0, 3.55271e-15, 0, 1, 58.5156, 0, 37.3071 )
-
-[node name="shelves2" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -20.1519, -0.737642, 23.7999 )
-
-[node name="shelves3" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.30337e-07, 0, -1, 0, 1, 0, 0.8, 0, -1.62921e-07, 18.1491, 0, 30.9788 )
-
-[node name="shelves4" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 34.2009, 0, 26.6844 )
-
-[node name="shelves10" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -2.26963, 0, 77.2173 )
-
-[node name="shelves11" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 18.3044, 0, 66.657 )
-
-[node name="shelves5" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 53.8089, 0, 18.5308 )
-
-[node name="shelves6" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 47.9213, 0, 68.6771 )
-
-[node name="shelves13" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 58.8932, -0.237553, 66.8515 )
-
-[node name="shelves14" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 77.1796, 0, 75.6895 )
-
-[node name="shelves15" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 77.1796, 0, 19.182 )
-
-[node name="shelves7" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 34.5809, 0, 77.8461 )
-
-[node name="shelves8" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -19.522, 0, 77.8461 )
-
-[node name="shelves18" parent="floor/shelves" instance=ExtResource( 10 )]
-transform = Transform( -1.22191e-07, 0, -1, 0, 1, 0, 0.75, 0, -1.62921e-07, 0.328884, 0, 16.1427 )
 
 [node name="shopping_cart_tex" parent="." instance=ExtResource( 4 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 82.0112, 5.95506, 71.5157 )
