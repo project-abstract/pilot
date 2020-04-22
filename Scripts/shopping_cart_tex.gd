@@ -23,7 +23,8 @@ func _physics_process(deltal):
 		#direction.x += 10
 		angle -= 10
 		rotate_y(deg2rad(-10))
-#	if Input.is_key_pressed(KEY_SPACE):
+	if Input.is_key_pressed(KEY_SPACE):
+		print(self.transform)
 #		if velocity.y == 0:
 #			velocity.y = 150*delta
 	if velocity.y > 0:
@@ -43,7 +44,8 @@ func _physics_process(deltal):
 		angle = 0
 	
 #	var collisionCount = self.get_slide_count()
-#	if collisionCount > 0:
+#	if collisionCount > 1:
 #		var collision = self.get_slide_collision(0)
+#		print(collision.collider.name)
 #		if collision.collider is RigidBody:
 #			collision.collider.apply_impulse(collision.position, -collision.normal)
