@@ -5,9 +5,9 @@
 [ext_resource path="res://Scenes/gate_basic.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/shopping_cart_tex.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scripts/virus.gd" type="Script" id=5]
-[ext_resource path="res://scripts/test.gd" type="Script" id=6]
-[ext_resource path="res://scenes/ceiling.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/clight.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scripts/test.gd" type="Script" id=6]
+[ext_resource path="res://Scenes/ceiling.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/clight.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Items/virus.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/shelf_basic.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Items/toiletpaper.tscn" type="PackedScene" id=11]
@@ -16,6 +16,11 @@
 [ext_resource path="res://Images/button_up_unpressed.png" type="Texture" id=14]
 [ext_resource path="res://Images/button_up_pressed.png" type="Texture" id=15]
 [ext_resource path="res://Scenes/wall_basic.tscn" type="PackedScene" id=16]
+
+
+
+
+
 
 [sub_resource type="Environment" id=1]
 ambient_light_color = Color( 1, 1, 1, 1 )

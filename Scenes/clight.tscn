@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://gridmaps/tile.meshlib" type="MeshLibrary" id=1]
+[ext_resource path="res://Gridmaps/tile.meshlib" type="MeshLibrary" id=1]
 
 [node name="light" type="Spatial"]
 
