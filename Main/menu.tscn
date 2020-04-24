@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/to_game.gd" type="Script" id=3]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play_game" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -170.181
+margin_top = 397.503
+margin_right = 156.819
+margin_bottom = 526.503
+text = "Play Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Label" parent="."]
+margin_left = 275.0
+margin_top = 75.0
+margin_right = 370.0
+margin_bottom = 89.0
+rect_scale = Vector2( 5.12, 5.84 )
+text = "Project COV3D"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="footnote" type="Label" parent="."]
+anchor_right = 0.219832
+anchor_bottom = 0.0342222
+margin_right = -124.385
+margin_bottom = -10.64
+rect_scale = Vector2( 1.79226, 1.76 )
+text = "(c) 2020 Project Abstract"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+[connection signal="pressed" from="play_game" to="." method="_on_play_game_pressed"]
