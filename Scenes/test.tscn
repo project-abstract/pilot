@@ -3,7 +3,7 @@
 [ext_resource path="res://Scenes/floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/shopping_cart_tex.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/gate_basic.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/shopping_cart_tex.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/shopping_cart_tex.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scripts/virus.gd" type="Script" id=5]
 [ext_resource path="res://Scripts/test.gd" type="Script" id=6]
 [ext_resource path="res://Scenes/ceiling.tscn" type="PackedScene" id=7]
@@ -16,11 +16,6 @@
 [ext_resource path="res://Images/button_up_unpressed.png" type="Texture" id=14]
 [ext_resource path="res://Images/button_up_pressed.png" type="Texture" id=15]
 [ext_resource path="res://Scenes/wall_basic.tscn" type="PackedScene" id=16]
-
-
-
-
-
 
 [sub_resource type="Environment" id=1]
 ambient_light_color = Color( 1, 1, 1, 1 )
@@ -218,25 +213,25 @@ transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -83.6881, 3.4847, -58.7761 )
 transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -65.8843, 3.4847, -58.7761 )
 
 [node name="shelf_basic20" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, 60.8391 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, 55.8572 )
 
 [node name="shelf_basic21" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, 43.456 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, 38.4741 )
 
 [node name="shelf_basic23" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, 25.7483 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, 20.7664 )
 
 [node name="shelf_basic22" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, 8.36526 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, 3.38338 )
 
 [node name="shelf_basic27" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, -6.32573 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, -11.3076 )
 
 [node name="shelf_basic26" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, -23.7088 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, -28.6907 )
 
 [node name="shelf_basic25" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, -41.4165 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 8.04473, 3.4847, -46.3984 )
 
 [node name="shelf_basic36" parent="floor/shelves_interior" instance=ExtResource( 10 )]
 transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, 84.0075 )
@@ -251,37 +246,37 @@ transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.333
 transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, 31.5336 )
 
 [node name="shelf_basic41" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, -25.6291 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, -29.8427 )
 
 [node name="shelf_basic43" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, -44.8431 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, -49.0567 )
 
 [node name="shelf_basic44" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, -62.5182 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, -66.7318 )
 
 [node name="shelf_basic45" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, -82.0166 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, -86.2302 )
 
 [node name="shelf_basic46" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -45.8989, 3.4847, -19.5529 )
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -45.8989, 3.4847, -23.3243 )
 
 [node name="shelf_basic47" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -62.6847, 3.4847, -19.5529 )
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -62.6847, 3.4847, -23.0927 )
 
 [node name="shelf_basic42" parent="floor/shelves_interior" instance=ExtResource( 10 )]
 transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -35.3337, 3.4847, 12.5962 )
 
 [node name="shelf_basic40" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -66.8495, 3.4847, 47.0009 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -66.8495, 3.4847, 41.3944 )
 
 [node name="shelf_basic39" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -66.8495, 3.4847, 29.6178 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -66.8495, 3.4847, 24.0113 )
 
 [node name="shelf_basic38" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -66.8495, 3.4847, 11.9101 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -66.8495, 3.4847, 6.30356 )
 
 [node name="shelf_basic37" parent="floor/shelves_interior" instance=ExtResource( 10 )]
-transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -66.8495, 3.4847, -5.47295 )
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, -66.8495, 3.4847, -11.0795 )
 
 [node name="wall" type="Spatial" parent="floor"]
 
