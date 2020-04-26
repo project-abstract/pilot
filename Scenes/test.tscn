@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Scenes/floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/shopping_cart_tex.gd" type="Script" id=2]
@@ -10,12 +10,14 @@
 [ext_resource path="res://Scenes/clight.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Items/virus.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/shelf_basic.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Items/toiletpaper.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Items/bread.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scripts/counter.gd" type="Script" id=12]
-[ext_resource path="res://Scripts/toiletpaper.gd" type="Script" id=13]
+[ext_resource path="res://Items/milk.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Images/button_up_unpressed.png" type="Texture" id=14]
 [ext_resource path="res://Images/button_up_pressed.png" type="Texture" id=15]
 [ext_resource path="res://Scenes/wall_basic.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Items/paperv2.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Items/corn.tscn" type="PackedScene" id=18]
 
 [sub_resource type="Environment" id=1]
 ambient_light_color = Color( 1, 1, 1, 1 )
@@ -4375,13 +4377,6 @@ contact_monitor = true
 can_sleep = false
 script = ExtResource( 5 )
 
-[node name="toiletpaper" parent="." instance=ExtResource( 11 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.671, 6.1754, 56.8195 )
-contacts_reported = 2
-contact_monitor = true
-can_sleep = false
-script = ExtResource( 13 )
-
 [node name="ScoreCounter" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
@@ -4443,4 +4438,15 @@ position = Vector2( 428, 500 )
 rotation = -3.14159
 normal = ExtResource( 14 )
 pressed = ExtResource( 15 )
-[connection signal="body_entered" from="toiletpaper" to="toiletpaper" method="_on_toiletpaper_body_entered"]
+
+[node name="toiletpaper" parent="." instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.6227, 0, 0 )
+
+[node name="milk" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70.7607, 15.2057, 6.48082 )
+
+[node name="bread" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.7412, 8.7361, 45.5411 )
+
+[node name="cornflakes" parent="." instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70.994, 12.0089, 31.4799 )
