@@ -48,7 +48,7 @@ func _physics_process(deltal):
 		var collision = self.get_slide_collision(1)
 		if collision.collider is RigidBody:
 			if collision.collider.name  == "virus":
-				get_node("/root/test/ScoreCounter").totalTime -= 15*1000
+				get_node("/root/test/ScoreCounter").totalTime -= 5*1000
 				get_node("/root/test/"+String(collision.collider.name)).queue_free()
 			if Input.is_key_pressed(KEY_SPACE):
 				get_node("/root/test/ItemCounter").text += String(collision.collider.name)+"\n" 

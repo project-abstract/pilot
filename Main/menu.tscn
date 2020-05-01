@@ -27,12 +27,38 @@ __meta__ = {
 [node name="play_game" type="Button" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -131.767
-margin_top = 342.387
-margin_right = 195.233
-margin_bottom = 471.387
+margin_left = -115.9
+margin_top = 156.746
+margin_right = 211.1
+margin_bottom = 285.746
 custom_fonts/font = SubResource( 1 )
 text = "Play Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="credits" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -115.9
+margin_top = 296.374
+margin_right = 211.1
+margin_bottom = 425.374
+custom_fonts/font = SubResource( 1 )
+text = "Credits"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit_game" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -114.314
+margin_top = 439.174
+margin_right = 212.686
+margin_bottom = 568.174
+custom_fonts/font = SubResource( 1 )
+text = "Quit"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -67,3 +93,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="pressed" from="play_game" to="." method="_on_play_game_pressed"]
+[connection signal="pressed" from="credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="exit_game" to="." method="_on_exit_game_pressed"]
