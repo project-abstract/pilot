@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://Fonts/NotoSans-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/to_game.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+use_filter = true
+font_data = ExtResource( 1 )
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
@@ -17,6 +31,7 @@ margin_left = -131.767
 margin_top = 342.387
 margin_right = 195.233
 margin_bottom = 471.387
+custom_fonts/font = SubResource( 1 )
 text = "Play Game"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -25,12 +40,13 @@ __meta__ = {
 [node name="title" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -232.89
-margin_top = 121.923
-margin_right = -137.89
-margin_bottom = 135.923
+margin_left = -362.484
+margin_top = 1.04152
+margin_right = -219.484
+margin_bottom = 24.0415
 rect_scale = Vector2( 5.12, 5.84 )
-text = "Project COV3D"
+custom_fonts/font = SubResource( 2 )
+text = "Haunted Shopping"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -45,6 +61,7 @@ margin_top = -37.3826
 margin_right = 45.0964
 margin_bottom = -23.3826
 rect_scale = Vector2( 1.79226, 1.76 )
+custom_fonts/font = SubResource( 3 )
 text = "(c) 2020 Project Abstract"
 __meta__ = {
 "_edit_use_anchors_": false

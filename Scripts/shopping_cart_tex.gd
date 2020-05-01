@@ -23,10 +23,10 @@ func _physics_process(deltal):
 		#direction.x += 10
 		angle -= 10
 		rotate_y(deg2rad(-10))
-	if Input.is_key_pressed(KEY_SPACE):
-		print(self.transform)
-#		if velocity.y == 0:
-#			velocity.y = 150*delta
+#	if Input.is_key_pressed(KEY_SPACE):
+#		print(self.transform)
+##		if velocity.y == 0:
+##			velocity.y = 150*delta
 	if velocity.y > 0:
 		gravity = -15
 	else:
@@ -42,10 +42,21 @@ func _physics_process(deltal):
 		angle = 350
 	if angle == 360:
 		angle = 0
+		
+	var hitCount = self.get_slide_count()
+	if hitCount > 1:
+		var collision = self.get_slide_collision(1)
+		if collision.collider is RigidBody:
+			if collision.collider.name  == "virus":
+				get_node("/root/test/ScoreCounter").totalTime -= 15*1000
+				get_node("/root/test/"+String(collision.collider.name)).queue_free()
+			if Input.is_key_pressed(KEY_SPACE):
+				get_node("/root/test/ItemCounter").text += String(collision.collider.name)+"\n" 
+				get_node("/root/test/"+String(collision.collider.name)).queue_free()
 	
 #	var collisionCount = self.get_slide_count()
 #	if collisionCount > 1:
 #		var collision = self.get_slide_collision(0)
-#		print(collision.collider.name)
 #		if collision.collider is RigidBody:
-#			collision.collider.apply_impulse(collision.position, -collision.normal)
+#			print("pass")
+			#collision.collider.apply_impulse(collision.position, -collision.normal)
