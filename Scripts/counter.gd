@@ -1,6 +1,6 @@
 extends Label
 
-var totalTime = 45*1000 #in mseconds 1s = 1000ms (computer)
+var totalTime = 25*1000 #in mseconds 1s = 1000ms (computer)
 var elapsed = 0
 
 func _process(delta):

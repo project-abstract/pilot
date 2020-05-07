@@ -49,11 +49,10 @@ func _physics_process(deltal):
 		if collision.collider is RigidBody:
 			if collision.collider.name  == "virus":
 				get_node("/root/test/ScoreCounter").totalTime -= 5*1000
-				get_node("/root/test/"+String(collision.collider.name)).queue_free()
-			if Input.is_key_pressed(KEY_SPACE):
+				get_node("/root/test/consumables/"+String(collision.collider.name)).queue_free()
+			if Input.is_action_pressed("ui_select"):
 				get_node("/root/test/ItemCounter").text += String(collision.collider.name)+"\n" 
-				get_node("/root/test/"+String(collision.collider.name)).queue_free()
-	
+				get_node("/root/test/consumables/"+String(collision.collider.name)).queue_free()
 #	var collisionCount = self.get_slide_count()
 #	if collisionCount > 1:
 #		var collision = self.get_slide_collision(0)

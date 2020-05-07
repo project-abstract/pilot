@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fonts/NotoSans-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Audio/Menu.wav" type="AudioStream" id=2]
 [ext_resource path="res://Scripts/to_game.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
@@ -92,6 +93,11 @@ text = "(c) 2020 Project Abstract"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -10.0
+autoplay = true
 [connection signal="pressed" from="play_game" to="." method="_on_play_game_pressed"]
 [connection signal="pressed" from="credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="exit_game" to="." method="_on_exit_game_pressed"]
