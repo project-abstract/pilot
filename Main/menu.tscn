@@ -1,6 +1,21 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://scripts/to_game.gd" type="Script" id=3]
+[ext_resource path="res://Fonts/NotoSans-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Audio/Menu.wav" type="AudioStream" id=2]
+[ext_resource path="res://Scripts/to_game.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+use_filter = true
+font_data = ExtResource( 1 )
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
@@ -13,34 +28,76 @@ __meta__ = {
 [node name="play_game" type="Button" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -170.181
-margin_top = 397.503
-margin_right = 156.819
-margin_bottom = 526.503
+margin_left = -115.9
+margin_top = 156.746
+margin_right = 211.1
+margin_bottom = 285.746
+custom_fonts/font = SubResource( 1 )
 text = "Play Game"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="credits" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -115.9
+margin_top = 296.374
+margin_right = 211.1
+margin_bottom = 425.374
+custom_fonts/font = SubResource( 1 )
+text = "Credits"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit_game" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -114.314
+margin_top = 439.174
+margin_right = 212.686
+margin_bottom = 568.174
+custom_fonts/font = SubResource( 1 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="title" type="Label" parent="."]
-margin_left = 275.0
-margin_top = 75.0
-margin_right = 370.0
-margin_bottom = 89.0
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -362.484
+margin_top = 1.04152
+margin_right = -219.484
+margin_bottom = 24.0415
 rect_scale = Vector2( 5.12, 5.84 )
-text = "Project COV3D"
+custom_fonts/font = SubResource( 2 )
+text = "Haunted Shopping"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="footnote" type="Label" parent="."]
-anchor_right = 0.219832
-anchor_bottom = 0.0342222
-margin_right = -124.385
-margin_bottom = -10.64
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -111.904
+margin_top = -37.3826
+margin_right = 45.0964
+margin_bottom = -23.3826
 rect_scale = Vector2( 1.79226, 1.76 )
+custom_fonts/font = SubResource( 3 )
 text = "(c) 2020 Project Abstract"
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -10.0
+autoplay = true
 [connection signal="pressed" from="play_game" to="." method="_on_play_game_pressed"]
+[connection signal="pressed" from="credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="exit_game" to="." method="_on_exit_game_pressed"]

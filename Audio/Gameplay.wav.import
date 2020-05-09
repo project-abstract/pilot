@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Gameplay.wav-85ca07241bcd9d036262f4f12549f013.sample"
+
+[deps]
+
+source_file="res://Audio/Gameplay.wav"
+dest_files=[ "res://.import/Gameplay.wav-85ca07241bcd9d036262f4f12549f013.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
