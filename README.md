@@ -1,4 +1,5 @@
-# pilot: Project COV3D
+# DEPRECATED, NO LONGER IN DEVELOPMENT
+# pilot
 Well very first game from us
 
 Import file through Godot startup and run menu.tscn as default scene.
